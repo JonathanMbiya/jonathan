@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style type="">
+    *{
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+.conteneur{
+    height: 350px;
+    width: 300px;
+    margin: 10% auto;
+    border: solid rgb(187, 255, 0);
+    border-radius: 12px;
+}
+.h1{
+    margin: 8%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(67, 6, 199);
+}
+h3{
+    font-family: monospace;
+    font-size: 16px;
+}
+p{
+    margin: 9% 16%;
+    background-color: rgb(132, 255, 0);
+    height: 20px;
+    width: 130px;
+    color: rgb(7, 8, 2);
+}
+
+.cadre{
+    margin: 9% auto;
+    border: solid rgb(224, 224, 4) 2px;
+    height: 70px;
+    width: 200px;
+}
+.number, .button{
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+}
+.button{
+    background: none;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+    <div class="conteneur">
+        <h1 class="h1">Factorielle d'un nombre</h1>
+        <div>
+            <input type="number" placeholder="Entrez un nombre" class="number" id="number">
+            <button type="submit" class="button" id="bouton">Calculer</button>
+        </div>
+        <div class="cadre">
+            <h3>La factorielle vaut :</h3>
+            <p class="repons" id="reponse"></p>
+        </div>
+    </div>
+</body>
+</html>
